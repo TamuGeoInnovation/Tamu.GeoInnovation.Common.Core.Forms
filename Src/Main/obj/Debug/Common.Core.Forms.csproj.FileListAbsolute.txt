@@ -1,0 +1,14 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\build\v1.1\bin\AnyCPU\debug\USC.GISResearchLab.Common.Core.Forms.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\build\v1.1\bin\AnyCPU\debug\USC.GISResearchLab.Common.Core.Forms.pdb
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\Debug\USC.GISResearchLab.Common.Core.GUIs.StandardWindows.SystemOutputWindows.FrmSystemOutput.resources
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\Debug\Common.Core.Forms.csproj.GenerateResource.Cache
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\Debug\USC.GISResearchLab.Common.Core.Forms.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\Debug\USC.GISResearchLab.Common.Core.Forms.pdb
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\Debug\Common.Core.Forms.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Forms\Src\Main\obj\Debug\Common.Core.Forms.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Forms\Src\Main\obj\Debug\USC.GISResearchLab.Common.Core.GUIs.StandardWindows.SystemOutputWindows.FrmSystemOutput.resources
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Forms\Src\Main\obj\Debug\Common.Core.Forms.csproj.GenerateResource.Cache
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Forms\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Forms.dll
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Forms\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Forms.pdb
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Forms\Src\Main\obj\Debug\Tamu.GeoInnovation.Common.Core.Forms.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Forms\Src\Main\obj\Debug\Tamu.GeoInnovation.Common.Core.Forms.pdb
