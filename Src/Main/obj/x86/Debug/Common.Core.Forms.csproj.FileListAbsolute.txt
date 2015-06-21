@@ -1,7 +1,0 @@
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Forms.dll
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Forms.pdb
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.GUIs.StandardWindows.SystemOutputWindows.FrmSystemOutput.resources
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\x86\Debug\Common.Core.Forms.csproj.GenerateResource.Cache
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Forms.dll
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Forms.pdb
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Forms\src\obj\x86\Debug\Common.Core.Forms.csprojResolveAssemblyReference.cache

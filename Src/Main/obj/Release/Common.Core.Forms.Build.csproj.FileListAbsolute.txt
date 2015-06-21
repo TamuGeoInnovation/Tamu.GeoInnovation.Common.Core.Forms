@@ -1,4 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Forms\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Forms.dll
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\USC.GISResearchLab.Common.Core.GUIs.StandardWindows.SystemOutputWindows.FrmSystemOutput.resources
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Build.csproj.GenerateResource.Cache
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Forms.dll
