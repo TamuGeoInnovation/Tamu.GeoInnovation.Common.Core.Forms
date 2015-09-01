@@ -55,56 +55,81 @@ namespace USC.GISResearchLab.Common.Forms.Utils.ComboBoxes
 
         public static void HighlightItemInComboBox(ComboBox comboBox, string item)
         {
-            HighlightItemInComboBox(comboBox, item, true);
+            HighlightItemInComboBox(comboBox, new string[] { item });
+        }
+
+        public static void HighlightItemInComboBox(ComboBox comboBox, string[] items)
+        {
+            HighlightItemInComboBox(comboBox, items, true);
         }
 
         public static void HighlightItemInComboBox(ComboBox comboBox, string item, bool useFirstOccurance)
         {
+            HighlightItemInComboBox(comboBox, new string[] { item }, useFirstOccurance);
+        }
+
+        public static void HighlightItemInComboBox(ComboBox comboBox, string[] items, bool useFirstOccurance)
+        {
             try
             {
-                if (comboBox.Items != null && comboBox.Items.Count > 0)
+                if (items != null)
                 {
-                    int index = -1;
-
-                    for (int i = 0; i < comboBox.Items.Count; i++)
+                    bool shouldProceed = true;
+                    foreach (string item in items)
                     {
-                        string cboItem = (string)comboBox.Items[i];
-                        cboItem = cboItem.ToLower();
-                        item = item.ToLower();
-                        if (String.Compare(cboItem, item, true) == 0)
+                        if (shouldProceed)
                         {
-                            index = i;
-                            if (useFirstOccurance)
+                            string tempItem = item;
+                            if (comboBox.Items != null && comboBox.Items.Count > 0)
                             {
-                                break;
-                            }
-                        }
-                    }
+                                int index = -1;
 
-                    if (index < 0 || !useFirstOccurance)
-                    {
-                        for (int i = 0; i < comboBox.Items.Count; i++)
-                        {
-                            string cboItem = (string)comboBox.Items[i];
-                            cboItem = cboItem.ToLower();
-                            item = item.ToLower();
-                            if (cboItem.IndexOf(item) >= 0)
-                            {
-                                index = i;
-                                if (useFirstOccurance)
+                                for (int i = 0; i < comboBox.Items.Count; i++)
                                 {
-                                    break;
+                                    string cboItem = (string)comboBox.Items[i];
+                                    cboItem = cboItem.ToLower();
+                                    tempItem = item.ToLower();
+                                    if (String.Compare(cboItem, tempItem, true) == 0)
+                                    {
+                                        index = i;
+                                        if (useFirstOccurance)
+                                        {
+                                            break;
+                                        }
+                                    }
                                 }
+
+                                if (index < 0 || !useFirstOccurance)
+                                {
+                                    for (int i = 0; i < comboBox.Items.Count; i++)
+                                    {
+                                        string cboItem = (string)comboBox.Items[i];
+                                        cboItem = cboItem.ToLower();
+                                        tempItem = item.ToLower();
+                                        if (cboItem.IndexOf(tempItem) >= 0)
+                                        {
+                                            index = i;
+                                            if (useFirstOccurance)
+                                            {
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                if (index < 0)
+                                {
+                                    index = 0;
+                                }
+                                else
+                                {
+                                    shouldProceed = false;
+                                }
+
+                                comboBox.SelectedIndex = index;
                             }
                         }
                     }
-
-                    if (index < 0)
-                    {
-                        index = 0;
-                    }
-
-                    comboBox.SelectedIndex = index;
                 }
             }
             catch (Exception e)
