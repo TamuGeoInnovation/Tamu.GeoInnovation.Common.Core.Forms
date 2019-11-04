@@ -33,7 +33,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.MaskedTextBoxes
         //  Initializes a new instance of this class, making sure to pass
         //  to its base constructor an instance of a MaskedTextBoxCell 
         //  class to use as the basic template.
-        public MaskedTextBoxColumn(): base(new MaskedTextBoxCell())
+        public MaskedTextBoxColumn() : base(new MaskedTextBoxCell())
         {
         }
 
@@ -116,7 +116,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.MaskedTextBoxes
             }
         }
 
-        
+
         //  By default, the MaskedTextBox uses the underscore (_) character
         //  to prompt for required characters.  This propertly lets you 
         //  choose a different one.

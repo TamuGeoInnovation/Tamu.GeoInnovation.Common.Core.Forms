@@ -6,11 +6,11 @@ using USC.GISResearchLab.Common.Utils.Files;
 
 namespace USC.GISResearchLab.Common.Utils.FileBrowsers
 {
-	/// <summary>
-	/// Summary description for FileBrowserUtils.
-	/// </summary>
-	public class FileBrowserUtils
-	{
+    /// <summary>
+    /// Summary description for FileBrowserUtils.
+    /// </summary>
+    public class FileBrowserUtils
+    {
         public static string TYPE_SHAPEFILE = "Shapefile (*.shp)|*.shp";
         public static string TYPE_DATABASE = "Access Databases (*.mdb)|*.mdb";
         public static string TYPE_ACCESS_DATABASE_2007 = "Access 2007 Databases (*.accdb)|*.accdb";
@@ -21,14 +21,14 @@ namespace USC.GISResearchLab.Common.Utils.FileBrowsers
         public static string TYPE_KML = "KML Files(*.kml)|*.kml";
         public static string TYPE_XML = "XMLFiles(*.xml)|*.xml";
 
-		public FileBrowserUtils()
-		{
-		}
+        public FileBrowserUtils()
+        {
+        }
 
-		public static string[] browseForOpenFile(string initialDirectory, string[] fileTypes, bool includeAllFiles)
-		{
-			return browseForOpenFile(initialDirectory, fileTypes, includeAllFiles, 0);
-		}
+        public static string[] browseForOpenFile(string initialDirectory, string[] fileTypes, bool includeAllFiles)
+        {
+            return browseForOpenFile(initialDirectory, fileTypes, includeAllFiles, 0);
+        }
 
         public static string BrowseAndSelectSaveFile(string types, string title, string initialName)
         {
@@ -113,80 +113,80 @@ namespace USC.GISResearchLab.Common.Utils.FileBrowsers
         }
 
         public static string[] browseForOpenFile(string initialDirectory, string[] fileTypes, bool includeAllFiles, int filterIndex)
-		{
-			string[] ret = new string[2];
-			ret[0] = "";
-			ret[1] = "";
+        {
+            string[] ret = new string[2];
+            ret[0] = "";
+            ret[1] = "";
 
-			OpenFileDialog dialog = new OpenFileDialog();
+            OpenFileDialog dialog = new OpenFileDialog();
             dialog.Filter = getFileTypesArrayList(fileTypes, includeAllFiles);
-			dialog.InitialDirectory = initialDirectory;
-			if (filterIndex >= 1 && filterIndex <= dialog.Filter.Length)
-			{
-				filterIndex ++;
-				dialog.FilterIndex = filterIndex;
-			}
+            dialog.InitialDirectory = initialDirectory;
+            if (filterIndex >= 1 && filterIndex <= dialog.Filter.Length)
+            {
+                filterIndex++;
+                dialog.FilterIndex = filterIndex;
+            }
 
-			if( dialog.ShowDialog() == DialogResult.OK )
-			{
-				ret[0] = dialog.FileName;
-				ret[1] = (dialog.FilterIndex - 1).ToString();
-			}
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                ret[0] = dialog.FileName;
+                ret[1] = (dialog.FilterIndex - 1).ToString();
+            }
 
-			return ret;
-		}
+            return ret;
+        }
 
         public static string[] browseForSaveFile(string initialDirectory, string[] fileTypes, bool includeAllFiles)
-		{
-			return browseForSaveFile(initialDirectory, fileTypes, includeAllFiles, 0);
-		}
+        {
+            return browseForSaveFile(initialDirectory, fileTypes, includeAllFiles, 0);
+        }
 
         public static string[] browseForSaveFile(string initialDirectory, string[] fileTypes, bool includeAllFiles, int filterIndex)
-		{
-			string[] ret = new string[2];
-			ret[0] = "";
-			ret[1] = "";
+        {
+            string[] ret = new string[2];
+            ret[0] = "";
+            ret[1] = "";
 
-			SaveFileDialog dialog = new SaveFileDialog();
+            SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = getFileTypesArrayList(fileTypes, includeAllFiles);
-			dialog.InitialDirectory = initialDirectory;
-			if (filterIndex >= 1 && filterIndex <= dialog.Filter.Length)
-			{
-				filterIndex ++;
-				dialog.FilterIndex = filterIndex;
-			}
+            dialog.InitialDirectory = initialDirectory;
+            if (filterIndex >= 1 && filterIndex <= dialog.Filter.Length)
+            {
+                filterIndex++;
+                dialog.FilterIndex = filterIndex;
+            }
 
-			if( dialog.ShowDialog() == DialogResult.OK )
-			{
-				ret[0] = dialog.FileName;
-				ret[1] = (dialog.FilterIndex - 1).ToString();
-			}
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                ret[0] = dialog.FileName;
+                ret[1] = (dialog.FilterIndex - 1).ToString();
+            }
 
-			return ret;
-		}
+            return ret;
+        }
 
-		public static string BrowseForFolder(string initialDirectory)
-		{
-			string ret = "";
+        public static string BrowseForFolder(string initialDirectory)
+        {
+            string ret = "";
 
-			FolderBrowserDialog dialog = new FolderBrowserDialog();
+            FolderBrowserDialog dialog = new FolderBrowserDialog();
             if (initialDirectory == null || initialDirectory.Equals(""))
-			{
-				dialog.SelectedPath = @"C:\";
-			}
-			else
-			{
-				FileInfo f = new FileInfo(initialDirectory);
-				dialog.SelectedPath = f.DirectoryName;
-			}
-			
-			if(dialog.ShowDialog() == DialogResult.OK)
-			{
-				ret = dialog.SelectedPath.ToString().Trim() + "\\";
-			}
+            {
+                dialog.SelectedPath = @"C:\";
+            }
+            else
+            {
+                FileInfo f = new FileInfo(initialDirectory);
+                dialog.SelectedPath = f.DirectoryName;
+            }
 
-			return ret;
-		}
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                ret = dialog.SelectedPath.ToString().Trim() + "\\";
+            }
+
+            return ret;
+        }
 
         public static string getFileTypesArrayList(string[] values, bool includeAllFiles)
         {
@@ -236,6 +236,6 @@ namespace USC.GISResearchLab.Common.Utils.FileBrowsers
 
             return ret;
         }
-	}
+    }
 }
 

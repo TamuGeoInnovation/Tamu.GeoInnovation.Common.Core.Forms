@@ -16,7 +16,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
         //  Initializes a new instance of this class, making sure to pass
         //  to its base constructor an instance of a TrackBarCell 
         //  class to use as the basic template.
-        public TrackBarColumn(): base(new TrackBarCell())
+        public TrackBarColumn() : base(new TrackBarCell())
         {
         }
 
@@ -172,7 +172,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
             }
         }
 
-       
+
 
     }
 }

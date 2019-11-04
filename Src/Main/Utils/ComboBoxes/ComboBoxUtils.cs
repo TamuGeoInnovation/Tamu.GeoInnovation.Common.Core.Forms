@@ -4,14 +4,14 @@ using System.Windows.Forms;
 
 namespace USC.GISResearchLab.Common.Forms.Utils.ComboBoxes
 {
-	/// <summary>
-	/// Summary description for ComboBoxUtils.
-	/// </summary>
-	public class ComboBoxUtils
-	{
-		public ComboBoxUtils()
-		{
-		}
+    /// <summary>
+    /// Summary description for ComboBoxUtils.
+    /// </summary>
+    public class ComboBoxUtils
+    {
+        public ComboBoxUtils()
+        {
+        }
 
         // this is from http://rajeshkm.blogspot.com/2006/11/adjust-combobox-drop-down-list-width-c.html
         public static void SetComboScrollWidth(object sender)
@@ -139,27 +139,27 @@ namespace USC.GISResearchLab.Common.Forms.Utils.ComboBoxes
         }
 
         public static void populateComboBox(ComboBox comboBox, string[] values)
-		{
-			populateComboBox(comboBox, values, false, 0);
-		}
+        {
+            populateComboBox(comboBox, values, false, 0);
+        }
 
-		public static void populateComboBox(ComboBox comboBox, string[] values, bool showSelection, int selectedIndex)
-		{
-			if (values != null)
-			{
-				comboBox.Items.Clear();
+        public static void populateComboBox(ComboBox comboBox, string[] values, bool showSelection, int selectedIndex)
+        {
+            if (values != null)
+            {
+                comboBox.Items.Clear();
 
-				for (int i=0; i<values.Length; i++)
-				{
-					string val = values[i];
-					comboBox.Items.Add(val);
-				}
+                for (int i = 0; i < values.Length; i++)
+                {
+                    string val = values[i];
+                    comboBox.Items.Add(val);
+                }
 
-				if (showSelection)
-				{
-					comboBox.SelectedIndex = selectedIndex;
-				}
-			}
-		}
-	}
+                if (showSelection)
+                {
+                    comboBox.SelectedIndex = selectedIndex;
+                }
+            }
+        }
+    }
 }

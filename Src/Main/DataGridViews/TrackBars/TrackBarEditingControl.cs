@@ -7,7 +7,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
     //  Identifies the editing control for the MaskedTextBox column type.  It
     //  isn't too much different from a regular MaskedTextBox control, 
     //  except that it implements the IDataGridViewEditingControl interface. 
-    public class TrackBarEditingControl: TrackBar, IDataGridViewEditingControl
+    public class TrackBarEditingControl : TrackBar, IDataGridViewEditingControl
     {
         protected int rowIndex;
         protected DataGridView dataGridView;
@@ -47,7 +47,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
 
         //  Indicates the cursor that should be shown when the user hovers their
         //  mouse over this cell when the editing control is shown.
-		public Cursor EditingPanelCursor
+        public Cursor EditingPanelCursor
         {
             get
             {
@@ -72,7 +72,7 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
 
 
         //  Sets/Gets the formatted value contents of this cell.
-		public object EditingControlFormattedValue
+        public object EditingControlFormattedValue
         {
             set
             {
@@ -80,20 +80,20 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
                 this.Text = Convert.ToString(this.Value);
                 NotifyDataGridViewOfValueChange();
             }
-			get 
-			{
-				//return this.Text;
+            get
+            {
+                //return this.Text;
                 return Convert.ToString(this.Value);
-			}
+            }
 
         }
 
-		//   Get the value of the editing control for formatting.
-		public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
-		{
-			//return this.Text;
+        //   Get the value of the editing control for formatting.
+        public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
+        {
+            //return this.Text;
             return Convert.ToString(this.Value);
-		}
+        }
 
         //  Process input key and determine if the key should be used for the editing control
         //  or allowed to be processed by the grid. Handle cursor movement keys for the MaskedTextBox
@@ -212,9 +212,9 @@ namespace USC.GISResearchLab.Common.Forms.DataGridViews.TrackBars
                 this.valueChanged = value;
             }
         }
-    
-		#endregion // IDataGridViewEditingControl.
-		
+
+        #endregion // IDataGridViewEditingControl.
+
         ///   Routine to translate between DataGridView
         ///   content alignments and text box horizontal alignments.
         private static HorizontalAlignment translateAlignment(DataGridViewContentAlignment align)
