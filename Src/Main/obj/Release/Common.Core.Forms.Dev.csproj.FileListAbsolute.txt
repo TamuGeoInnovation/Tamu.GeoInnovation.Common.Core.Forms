@@ -9,3 +9,8 @@ C:\DevSource\Tamu\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Tamu.GeoI
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Dev.csprojAssemblyReference.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Dev.csproj.CoreCompileInputs.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Dev.csproj.CopyComplete
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Forms.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Dev.csprojAssemblyReference.cache
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\USC.GISResearchLab.Common.Core.GUIs.StandardWindows.SystemOutputWindows.FrmSystemOutput.resources
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Common.Core.Forms.Dev.csproj.GenerateResource.cache
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Forms\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Forms.dll
